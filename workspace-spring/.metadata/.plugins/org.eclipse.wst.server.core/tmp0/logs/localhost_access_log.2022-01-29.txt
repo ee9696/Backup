@@ -1,0 +1,12 @@
+127.0.0.1 - - [29/Jan/2022:19:45:46 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [29/Jan/2022:19:45:47 +0900] "GET /chapter06_SpringWebMaven/ HTTP/1.1" 200 584
+0:0:0:0:0:0:0:1 - - [29/Jan/2022:19:45:47 +0900] "GET /favicon.ico HTTP/1.1" 404 818
+0:0:0:0:0:0:0:1 - - [29/Jan/2022:19:46:10 +0900] "GET /chapter06_SpringWebMaven/user/list HTTP/1.1" 200 632
+0:0:0:0:0:0:0:1 - - [29/Jan/2022:19:46:11 +0900] "POST /chapter06_SpringWebMaven/user/getUserList HTTP/1.1" 500 16045
+127.0.0.1 - - [29/Jan/2022:19:51:42 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [29/Jan/2022:19:51:44 +0900] "GET /chapter06_SpringWebMaven/ HTTP/1.1" 200 471
+0:0:0:0:0:0:0:1 - - [29/Jan/2022:19:51:44 +0900] "GET /favicon.ico HTTP/1.1" 404 818
+0:0:0:0:0:0:0:1 - - [29/Jan/2022:19:51:50 +0900] "GET /chapter06_SpringWebMaven/user/modifyForm HTTP/1.1" 200 2728
+0:0:0:0:0:0:0:1 - - [29/Jan/2022:19:51:54 +0900] "GET /chapter06_SpringWebMaven/user/list HTTP/1.1" 200 670
+0:0:0:0:0:0:0:1 - - [29/Jan/2022:19:51:54 +0900] "GET /chapter06_SpringWebMaven/image/%EB%A7%9D%EC%83%81%ED%86%A0%EB%81%BC.png HTTP/1.1" 200 23083
+0:0:0:0:0:0:0:1 - - [29/Jan/2022:19:51:55 +0900] "POST /chapter06_SpringWebMaven/user/getUserList HTTP/1.1" 200 347

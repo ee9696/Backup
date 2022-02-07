@@ -1,0 +1,11 @@
+127.0.0.1 - - [05/Dec/2021:14:18:50 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [05/Dec/2021:14:18:51 +0900] "GET /milkyWayForest/mypage/mypageMain.jsp HTTP/1.1" 200 5816
+0:0:0:0:0:0:0:1 - - [05/Dec/2021:14:18:52 +0900] "GET /milkyWayForest/image/welcome.png HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [05/Dec/2021:14:18:52 +0900] "GET /milkyWayForest/css/mypage.css HTTP/1.1" 200 4782
+0:0:0:0:0:0:0:1 - - [05/Dec/2021:14:18:52 +0900] "GET /favicon.ico HTTP/1.1" 404 818
+0:0:0:0:0:0:0:1 - - [05/Dec/2021:14:19:03 +0900] "GET /milkyWayForest/mypage/mypageShpMng.jsp HTTP/1.1" 200 5248
+0:0:0:0:0:0:0:1 - - [05/Dec/2021:14:19:04 +0900] "GET /favicon.ico HTTP/1.1" 404 818
+0:0:0:0:0:0:0:1 - - [05/Dec/2021:14:19:06 +0900] "GET /milkyWayForest/mypage/mypageShpMngWriteForm.jsp HTTP/1.1" 200 5323
+0:0:0:0:0:0:0:1 - - [05/Dec/2021:14:19:06 +0900] "GET /milkyWayForest/js/mypage.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [05/Dec/2021:14:19:22 +0900] "GET /milkyWayForest/mypage/mypageShpMng.jsp HTTP/1.1" 200 5248
+0:0:0:0:0:0:0:1 - - [05/Dec/2021:14:19:24 +0900] "GET /milkyWayForest/mypage/mypageShpMngWriteForm.jsp HTTP/1.1" 200 5322

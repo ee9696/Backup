@@ -1,0 +1,84 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- <link rel="stylesheet" href="/milkyWayForest/css/mypage.css"> -->
+
+<form id="mypageShpMngWriteForm">
+	<div id="myBasicInfo-wrapper" class="item">
+		<div id="myBasicInfo-title" class="navbar navbar-light alert-info">
+			<span class="navbar-brand mb-0 h1" style="text-align: center">배송지 관리</span>
+		</div>
+		
+		<div id="myBasicInfo-state" style="padding-top:40px;padding-left:50px;padding-right:50px;">		
+			<table>
+				<tbody>
+					<tr>
+						<td id="td-id" style="width:90px; padding-bottom:20px;">배송지명</td>
+						<td>
+							<div style="padding-bottom:20px;"><input type="text" id="shpMngName" name="id" class="form-control bg-white border" style="width:170px;"></div>
+						</td>
+					</tr>
+					<tr>
+						<td style="padding-bottom:20px;">수령인</td>
+						<td>
+							<div style="padding-bottom:20px;"><input type="text" id="pwd" name="pwd" class="form-control bg-white border" placeholder="150자 이내로 입력" style="width:170px;"></div>
+						</td>
+					</tr>
+					<tr>
+						<td style="padding-bottom:20px;">주소</td>
+						<td style="padding-bottom:20px;">
+							<div id="dd" class="input-group" style="padding-bottom:10px;">
+								<input type="text" id="repwd" class="form-control bg-white border" size="5">
+								<input type="button" value="주소검색">
+							</div>
+							<div id="dd1" class="input-group"style="padding-bottom:10px;">
+								<input type="text" id="repwd" class="form-control bg-white border" size="5">
+							</div>
+							<div id="dd2" class="input-group">
+								<input type="text" id="repwd" class="form-control bg-white border" size="5">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td style="padding-bottom:10px;">연락처1</td>
+						<td>
+							<div id="tel-input-wrapper" class="input-group mb-3">
+								<input type="text" id="tel1" name="tel1" class="form-control bg-white border rounded">
+								<div class="input-group-prepend">
+									<span class="input-group-text bg-white border-0">-</span>
+								</div>
+								<input type="text" id="tel2" name="tel2" class="form-control bg-white border rounded">
+								<div class="input-group-prepend">
+									<span class="input-group-text bg-white border-0">-</span>
+								</div>
+								<input type="text" id="tel3" name="tel3" class="form-control bg-white border rounded">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>기본배송지</td>
+						<td>
+							<div style="padding-left:20px;"><input type="checkbox">&nbsp;기본 배송지로 설정</div>
+						</td>
+					</tr>
+					<tr>
+						<td>입력 / 수정하신 배송지는 배송 목록에 저장됩니다.</td>
+					</tr>
+				</tbody>
+			</table>
+			<div id="result-div"></div>
+			
+			<div align="center" id="button-wrap">
+				<button type="button" id="Update-button" class="btn btn-info">닫기</button>
+				<button type="button" id="Delete-button" class="btn btn-info">저장</button>
+				
+			</div>
+		</div>
+	</div>
+</form>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/milkyWayForest/js/mypage.js"></script>
+<script>
+
+</script>

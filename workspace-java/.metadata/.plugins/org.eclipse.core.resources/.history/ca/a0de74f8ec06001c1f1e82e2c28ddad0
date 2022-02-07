@@ -1,0 +1,9 @@
+package io;
+
+public class ScoreImpl implements Score {
+	
+	@Override
+	public void print(DefaultTableModel model) {
+		
+	}
+}

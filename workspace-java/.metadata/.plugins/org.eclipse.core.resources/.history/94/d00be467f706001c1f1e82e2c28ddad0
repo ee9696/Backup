@@ -1,0 +1,27 @@
+package io;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.swing.table.DefaultTableModel;
+
+public class ScoreImpl implements Score {
+	private List<Score> list;
+	
+	public ScoreImpl() {
+		list = new ArrayList<ScoreDTO>();
+	}
+	
+	@Override
+	public void input(ScoreDTO dto) {
+		list.add(dto);
+		JOptionPane.showMessageDialog(null, "등록 완료");
+		
+	}
+	
+	
+	@Override
+	public void print(DefaultTableModel model) {
+		
+	}
+}

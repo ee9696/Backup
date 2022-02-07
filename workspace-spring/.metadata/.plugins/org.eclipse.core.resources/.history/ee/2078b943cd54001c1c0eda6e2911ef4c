@@ -1,0 +1,23 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"	%>
+<style type="text/css">
+.li_table{width:300px; border: 1px solid red; border-top:none;border-right:none;}
+.li_table ul{clear:left;}
+
+</style>
+<form>
+	<div align="center" style="height:20px;">배송지 수정</div>
+	<div class="li_table">
+		<table>
+			<tr>
+				<td>배송지명</td>
+				<td><div><input type="text"></div></td>
+			</tr>
+			<tr>
+				<td>수령인</td>
+				<td><div><input type="text"></div></td>
+				
+			
+		</table>
+	</div>
+</form>

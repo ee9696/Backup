@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;chapter06_SpringWebMaven&apos;" deleteContents="true" description="Delete resource &apos;chapter06_SpringWebMaven&apos;" element1="/chapter06_SpringWebMaven" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1643453463218"/>
+</session>

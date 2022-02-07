@@ -1,0 +1,5 @@
+$(function(){
+	$('#join').submit(function*(){
+		var user_id = $('input[name=user)id"]').val;
+	});
+});

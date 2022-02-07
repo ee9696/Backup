@@ -1,0 +1,309 @@
+@charset "UTF-8";
+
+#mypageMain,
+#mypageMyInfo,
+#mypageMyPost,
+#mypageMyQnaView,
+#updateMyQnaViewForm {
+	margin: 0;
+	padding: 0;
+}
+/*********** 디폴트 설정 ***********/
+#topNav-wrapper {
+	display: grid;
+	grid-auto-rows: minmax(100px, auto); /* 행(row)의 배치, minmax(최소값, 최대값) */
+	grid-template-columns: repeat(1fr);
+	column-gap: 20px;
+	width: 820px;
+	/* align-items: stretch; 세로 방향 정렬
+	justify-items: stretch; 가로 방향 정렬
+	align-content: stretch; 아이템 그룹 세로 정렬
+	justify-content: stretch; 아이템 그룹 가로 정렬 */
+	padding-top: 0.75rem;
+}
+
+#topNav-wrapper #myInfoBox-wrapper{
+	grid-column: 1;
+	grid-row: 1;
+	position: relative;
+	width: 500px;
+	height: 200px;
+}
+#topNav-wrapper #myInfoPhoto{
+	float: left;
+}
+#topNav-wrapper #myInfoPhoto img{
+	margin: 50px 10px;
+	width:100px;
+	height:100px;
+}
+#topNav-wrapper #myInfoDescript{
+	width: 400px;
+	position: absolute;
+ 	left: 100px;
+/*	padding-top: 25px;
+    padding-left: 5px; */
+}
+
+#topNav-wrapper #myBenefit-wrapper{
+	grid-column: 2;
+	grid-row: 1;
+	width: 300px;
+}
+#topNav-wrapper #myBenefit-wrapper ul li{
+	height: 51px;
+	margin-top: -1px;
+}
+
+
+/*********** 마이페이지 메인 ***********/
+#mypageMain #main-wrapper,
+#mypageMyInfo #main-wrapper,
+#mypageMyPost #main-wrapper,
+#mypageMyQnaView #main-wrapper,
+#updateMyQnaViewForm #main-wrapper{
+	display: grid;
+	grid-auto-rows: minmax(100px, auto); /* 행(row)의 배치, minmax(최소값, 최대값) */
+	grid-auto-columns: minmax(250px, auto); /* 열(column)의 배치 */
+	row-gap: 10px;
+	column-gap: 10px;
+	margin: 0 auto;
+	width: 60%;
+	align-items: stretch; /* 세로 방향 정렬 */
+	justify-items: stretch; /* 가로 방향 정렬 */
+	align-content: stretch; /* 아이템 그룹 세로 정렬 */
+	justify-content: stretch; /* 아이템 그룹 가로 정렬 */
+}
+#mypageMain #main-sideNav,
+#mypageMyInfo #main-sideNav,
+#mypageMyPost #main-sideNav,
+#mypageMyQnaView #main-sideNav,
+#updateMyQnaViewForm #main-sideNav {
+	grid-column: 1;
+	grid-row: 1 / span 3;
+}
+#mypageMain #main-topNav,
+#mypageMyInfo #main-topNav,
+#mypageMyPost #main-topNav,
+#mypageMyQnaView #main-topNav,
+#updateMyQnaViewForm #main-topNav {
+	grid-column: 2;
+	grid-row: 1;
+}
+
+#mypageMain #myShipment-wrapper{
+	grid-column: 2;
+	grid-row: 2;
+	width: 820px;
+	/* padding-left: 15px; */
+}
+#mypageMain #myPayment-wrapper{
+	grid-column: 2;
+	grid-row: 3;
+	width: 820px;
+	/* padding-left: 15px; */
+}
+
+/*********** 회원정보 비밀번호 확인 창 ***********/
+#mypagePwdForm #main-wrapper,
+#mypagePwdForm2 #main-wrapper{
+	width:100%;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+#mypagePwdForm #mypagePwd-wrapper,
+#mypagePwdForm2 #mypagePwd-wrapper{
+	padding-top: 60px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#mypagePwdForm #mypagePwd-wrapper h2,
+#mypagePwdForm2 #mypagePwd-wrapper h2{
+	font-size: 20px;
+}
+#mypagePwdForm #mypagePwd-wrapper p,
+#mypagePwdForm2 #mypagePwd-wrapper p{
+	font-size: 15px;
+	margin-top: 13px;
+	text-align: center;
+}
+#mypagePwdForm #mypagePwd-wrapper strong,
+#mypagePwdForm2 #mypagePwd-wrapper strong{
+	color: red;
+}
+#mypagePwdForm #mypagePwd-setting-wrapper,
+#mypagePwdForm2 #mypagePwd-setting-wrapper{
+	margin-top: 60px;
+	padding: 30px;
+}
+#mypagePwdForm #mypagePwd-input-wrap,
+#mypagePwdForm2 #mypagePwd-input-wrap {
+	margin: 20px 0;
+}
+#mypagePwdForm #mypagePwd-input-wrap input,
+#mypagePwdForm2 #mypagePwd-input-wrap input {
+	width: 465px;
+	height :48px;	
+}
+#mypagePwdForm #button-wrap button,
+#mypagePwdForm2 #button-wrap button {
+	width: 230px;
+	height :48px;
+}
+#mypagePwdForm #result-div,
+#mypagePwdForm2 #result-div{
+	padding-top: 10px;
+    font-size: 12px;
+    color: red;
+	width: 465px;
+	height :10px;
+}
+
+/*********** 회원정보 변경/탈퇴 ***********/
+#mypageMyInfo #myBasicInfo-wrapper{
+	grid-column: 2;
+	grid-row: 2;
+	width: 820px;
+	margin-top: 60px;
+}
+#mypageMyInfo #myBasicInfo-state table tbody tr:first-child #td-id {
+	width: 200px;
+}
+#mypageMyInfo #myBasicInfo-state #pwd,
+#mypageMyInfo #myBasicInfo-state #repwd,
+#mypageMyInfo #myBasicInfo-state #nickname {
+	width: 200px;
+}
+#mypageMyInfo #myBasicInfo-state #idPwdQuestion-wrapper {
+	width: 600px;
+}
+
+#mypageMyInfo #myBasicInfo-state #tel-input-wrapper,
+#mypageMyInfo #myBasicInfo-state #birthday-input-wrapper {
+	width: 300px;
+}
+#mypageMyInfo #main-wrapper #myBasicInfo-wrapper #myBasicInfo-state #email-number-wrapper #emailNum {
+	width: 200px;
+	flex: 0 1 auto; /* flex-basis값보다 커지지 않고, 컨테이너 공간이 모자라면 크기가 줄고, flex 항목은 주축 방향으로 지정된 크기 또는 자기 내부 요소 크기 만큼 공간을 차지*/
+}
+
+#mypageMyInfo #myBasicInfo-state #email-input-wrapper #email-send-button,
+#mypageMyInfo #myBasicInfo-state #email-number-wrapper #email-number-button {
+	margin-left: 10px;
+}
+#mypageMyInfo #result-div{
+	padding-top: 10px;
+    font-size: 12px;
+    color: red;
+	width: 465px;
+	height :10px;
+}
+
+/*********** 게시글 관리 ***********/
+#mypageMyPost #myQna-wrapper{
+	grid-column: 2;
+	grid-row: 2;
+	width: 820px;
+	margin-top: 60px;
+}
+#mypageMyPost #currentPaging {
+	border: 1px solid #ddd;
+	font-weight: bold;
+	color: blue;
+	padding: 3px 8px;
+	cursor: pointer;
+}
+#mypageMyPost #paging {
+	padding: 3px 8px;
+	cursor: pointer;
+}
+#mypageMyPost #myQnaTable td {
+	text-align: center;
+} 
+
+#mypageMyPost #myQnaPagingDiv {
+	text-align: center;
+	width: 70%;
+	margin: 0 auto;
+}
+
+#mypageMyPost .qnaSubject:link { color: black; text-decoration: none; }
+#mypageMyPost .qnaSubject:visited { color: black; text-decoration: none; }
+#mypageMyPost .qnaSubject:hover { color: red; text-decoration: underline; }
+#mypageMyPost .qnaSubject:active { color: black; text-decoration: none; }
+
+/*********** 문의글 보기 ***********/
+#mypageMyQnaView #myQnaView-wrapper{
+	grid-column: 2;
+	grid-row: 2;
+	width: 820px;
+	margin-top: 60px;
+}
+#mypageMyQnaView #qnaSubject {
+	border-top : 1px solid #222;
+	border-bottom : 1px solid #222;
+	font-size: 15pt;
+	font-weight: bold;
+	padding: 15px;
+	margin: 20px 0; 
+}
+#mypageMyQnaView #qnaDate {
+	font-size: 10pt;
+	font-weight: normal;
+	padding: 5px;
+	color: #999;
+	text-align: right;
+	margin: 0;
+}
+
+#mypageMyQnaView #qnaContent {
+	border-bottom : 1px solid #999;
+	margin: 20px 0;
+	padding: 50px 15px;
+	font-size: 10pt;
+}
+#mypageMyQnaView #qnaContent img {
+	margin: 50px 0 0 0;
+}
+#mypageMyQnaView #myQnaListBtnDiv {
+	text-align: right;
+}
+#mypageMyQnaView button {
+	margin-right: 10px;
+	padding: 8px 30px;
+	
+}
+#mypageMyQnaView .commentContent {
+	background: #ddd;
+	height: 80px;
+	margin: 20px auto;
+	width: 100%;
+	border-radius: 7px;
+	padding: 10px 15px;
+}
+/*********** 문의글 수정 ***********/
+#updateMyQnaViewForm #myQnaView-wrapper{
+	grid-column: 2;
+	grid-row: 2;
+	width: 820px;
+	margin-top: 60px;
+}
+#updateMyQnaViewForm #updateMyQnaViewTable {
+	margin: 90px 0 30px 0;
+}
+
+#updateMyQnaViewForm #updateMyQnaViewTable input,
+#updateMyQnaViewForm #updateMyQnaViewTable select {
+	width: 100%;
+	border: 0;
+	outline: 0;
+	border-bottom: 1px solid #999;
+	vertical-align: bottom;
+}
+
+#updateMyQnaViewForm #updateMyQnaViewTable textarea {
+	width: 100%;
+}
+

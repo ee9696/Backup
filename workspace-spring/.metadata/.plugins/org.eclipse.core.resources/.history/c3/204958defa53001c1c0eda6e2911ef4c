@@ -1,0 +1,49 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="/milkyWayForest/css/mypage.css">
+
+<style type="text/css">
+#mypageMyShpMng #btn{margin-bottom: 10px;}
+</style>
+<form id="mypageMyShpMng" name="mypageMyInfo">
+<div id="main-wrapper">
+	<div id="main-sideNav" class="item">
+		<jsp:include page="mypageSideNav.jsp"/>
+	</div>
+
+	<div id="main-topNav" class="item">
+		<jsp:include page="mypageTopNav.jsp"/>	
+	</div>
+	<%----------------- 디폴트 설정 -----------------%>
+	<div id="myPayment-state">
+		<div align="right" id="abcd">
+			<input type="button" id="btn"value="배송지 등록">
+		</div>
+		<div>
+			<table class="table table-bordered">
+				<thead>
+					<tr colspan="5">
+						<th>배송지 관리</th>
+					<tr>
+						<td scope="col">선택</td>
+						<td scope="col">배송지 이름</td>
+						<td scope="col">주소</td>
+						<td scope="col">연락처</td>
+						<td scope="col">수정/삭제</td>
+					</tr>
+				</thead>
+			</table>
+		</div>	
+	</div>
+</div>
+<div class="black_bg"></div>
+<div class="modal_wrap">
+	<div class="modal_close"><a href="#">close</a></div>
+	<div>
+		모달창 내용
+	</div>
+</div>
+</form>
+		
+		

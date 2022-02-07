@@ -1,0 +1,146 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="/milkyWayForest/css/mypage.css">
+
+<style type="text/css">
+#mypageMyinfo #contents{
+	margin-bottom: 10px;
+}
+
+
+</style>
+<form id="mypageShpMngListForm" name="mypageMyInfo">
+<div id="main-wrapper">
+	<div id="main-sideNav" class="item">
+		<jsp:include page="mypageSideNav.jsp"/>
+	</div>
+
+	<div id="main-topNav" class="item">
+		<jsp:include page="mypageTopNav.jsp"/>	
+	</div>
+	<%----------------- 디폴트 설정 -----------------%>
+	<div class="customer_grade">
+		<input type="hidden" id="id" value="${memId }">
+    
+    <div class="grade_box family_type" style="padding:56px 96px 55px;border:1px solid #e9e9e9;display:block; width:820px;">
+        <div class="grade_summury" style="min-height:64px; padding-bottom:20px; border-bottom:1px solid #e9e9e9; color:#999; font-size:16px; line-height:28px; letter-spacing:-1px;">
+            <div id="sp_mytmall_grade ico_grade"></div>
+            <div class="grade_inner">
+                <p class="txt" style="display:inline-block;font-weight:bold; font-size:24px; line-height:36px; color: #000; vertical-align:middle;">${memId } 고객님은 <em class="txt_grade" style="color:#05cfb5;font-style:normal;"></em> 회원입니다.</p>
+            </div>
+        </div>
+        <div class="grade_state">
+            <div class="grade_state_top" style="text-align:center;position:relative;padding:24px 0 12px;line-height:28px;margin:0;display:block;">
+                <strong class="tit" style="font-size:16px; color:#333; margin:0; padding:0;font-weight:bold; text-align:center;line-height:28px;">VIP 등급상향을 위한 주문금액/주문건수</strong>
+            </div>
+            <ul class="grade_state_info"style="border-bottom:1px solid #e9e9e9; font-size:0; list-style:none;margin:0;padding:0;display:block;margin-block-start:1em;margin-block-end:1em;margin-inline-start:0px;margin:inline-end:0px;text-align:center">
+                <li style="margin:0; padding-bottom:24px;list-style:none; display:list-item;text-align:center;;font-size:0;">
+                    <div class="info">	
+                        <strong class="txt_num" style="display:inline-block; font-size:16px; vertical-align:top;margin:0;padding:0;font-weight:bold;color:#333;line-height:28px;letter-spacing:-1px;list-style:none;text-align:center;">101,300원<span class="skip">주문함</span></strong>
+                        <span class="txt" style="display:inline-block; margin-left:8px; font-size:14px; vertical-align:top;margin:0;padding:0;color:#333;line-height:28px;letter-spacing:-1px;list-style:none;text-align:center;">/ 98,700원 남음</span>
+                        <span class="purpose" style="position:relative;top:0;right:0;font-size:12px;color:#999;margin:0;padding-left:20px;line-height:28px;letter-spacing:-1px;list-style:none;text-align:center;">목표 20만원</span>
+                    </div>
+                    <div class="grade_state_bar" style="position:relative;width:400px;height:6px;background:#eee;margin:0;padding:0;display:block;list-style:none;text-align:-webrit-match-parent;">
+                        <span class="grade_percent" style="width:50%;background:#05cfb5;"></span>
+                    </div>
+                </li>
+                <li>
+                    <div class="info">
+                        <strong class="txt_num">2건<span class="skip">주문함</span></strong>
+                        <span class="txt">/ 8건 남음</span>
+                        <span class="purpose">목표 10건</span>
+                    </div>
+                    <div class="grade_state_dot">
+                        <span class="grade_percent" style="width:20%;"></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="grade_benefit_info">
+        <h3 class="tit">등급 혜택</h3>
+        <p class="txt">SK pay point는 PC바로가기, 11번가 모바일 App 결제시 1회 최대 1만원까지 적립가능합니다.</p>
+        <p class="txt">최근 3개월간의 구매확정된 상품을 반영하여 등급이 결정되며 매월 1일 새로운 회원등급이 부여됩니다.</p>
+    </div>
+    <div class="level_incentive">
+        <h3 class="tit">VIP 회원을 위한 특별한 혜택 한 눈에 보기</h3>
+        <ul class="incen_list_02">
+            
+            <li>
+                <span class="thumb"><img src="//cdn.011st.com/browsing/seller/2019/06/13/2019061314141331551.png" alt="쿠폰"></span>
+                <strong class="incen">20+</strong>
+                <span>TOP BRAND<br>쿠폰증정</span>
+            </li>
+            <li>
+                <span class="thumb"><img src="//cdn.011st.com/browsing/seller/2019/06/13/201906131407135579.png" alt="포인트"></span>
+                <strong class="incen">최대2%</strong>
+                <span>SK pay point<br>적립혜택</span>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+//회원정보 불러오기 
+$(function(){
+	$.ajax({
+		url: '/milkyWayForest/mypage/getMypageMyInfo',
+		type: 'post',
+		data: {'id' : $('#id').val()},
+		success: function(data){
+			console.log(JSON.stringify(data));
+			$('.txt_grade').html(data.memberGrade);	
+			$('#sp_mytmall_grade ico_grade').append($('<img>',{
+				src: '/milkyWayForest/image/'+data.memberGrade+'.png',
+				alt: data.memberGrade,
+				class: 'card-img rounded float-left'
+			}));
+			
+			var savedMoney = data.savedMoney.toLocaleString();
+			$('#savedMoney').html(savedMoney);
+		},
+		error: function(err){
+			console.log(err);
+		}
+	});
+	
+	$.ajax({
+		url: '/milkyWayForest/mypage/getPaymentInfo',
+		type: 'post',
+		success: function(data){
+			console.log(JSON.stringify(data));
+			$('#countCoupon').html(data.countCoupon);
+			$('#countPayment').html(data.countPayment);	
+			
+			var paidTotal;
+			
+			if(data.paymentList == ''){
+				$('#paidTotal').html('0');
+				
+			}else{
+				$.each(data.paymentList, function(index, items) {
+					console.log(items.payPrice);
+					var payQty = items.payQty*1;
+					var payPrice = items.payPrice*1;
+					var payRate = items.payRate*1;
+					
+					paidTotal = payQty*payPrice*(1-payRate/100);
+				});
+				
+				paidTotal = paidTotal.toLocaleString();
+				$('#paidTotal').html(paidTotal);
+			}
+
+			
+		},
+		error: function(err){
+			console.log(err);
+		}
+	});
+
+});
+</script>
+</form>

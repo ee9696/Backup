@@ -1,0 +1,5 @@
+127.0.0.1 - - [20/Nov/2021:00:10:32 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [20/Nov/2021:00:10:35 +0900] "GET /milkyWayForest/write/writeAgreeForm.jsp HTTP/1.1" 200 16976
+0:0:0:0:0:0:0:1 - - [20/Nov/2021:00:10:35 +0900] "GET /milkyWayForest/img/starbucksStaff.jpg HTTP/1.1" 404 852
+0:0:0:0:0:0:0:1 - - [20/Nov/2021:00:10:35 +0900] "GET /milkyWayForest/css/writeAgreeForm.css HTTP/1.1" 200 3891
+0:0:0:0:0:0:0:1 - - [20/Nov/2021:00:10:35 +0900] "GET /favicon.ico HTTP/1.1" 404 818

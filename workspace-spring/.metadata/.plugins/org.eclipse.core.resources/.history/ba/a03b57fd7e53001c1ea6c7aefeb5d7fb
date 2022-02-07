@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+/* 약관동의 */ 
+#writeAgreeForm #kakaoWriteBtn{background-color:#003300;  cursor:pointer; width:30%; height:50px;border-radius:5px 5px 5px 5px; font-size:12pt; margin-bottom: 6%; background-color: yellow;  border-color:none; }
+#writeAgreeForm #simpleWrite {border: 1px solid #ddd;background-color: #fff; margin:0; padding:0; width:600px;height:50px; margin-bottom:20px; }
+#writeAgreeForm{width: 600px;margin: 0 auto; margin-top:20px;}
+#writeAgreeForm>ul.writeAgreeBox{border: 1px solid #ddd;background-color: #fff; margin:0; padding:0; width:600px; }
+#writeAgreeForm>ul,#writeAgreeForm>ul>li>ul>li{list-style: none}
+#writeAgreeForm>ul>.check01{width:100%; margin:0 auto;}
+#writeAgreeForm>ul>.check03{width:100%; margin:0 auto;}
+#writeAgreeForm>ul>li>.writeAgreeFix{margin:0;padding:0;}
+#writeAgreeForm>.writeAgreeCheckBox,.writeAgreeCheckBox>ul{position: relative; padding:0;}
+#writeAgreeForm>.writeAgreeCheckBox>ul>li{float: left;}
+#writeAgreeForm>ul>.writeAgreeCheckBox>ul>li:first-child{margin: 20px;color: #888;font-weight: 900;}
+#writeAgreeForm>ul>.writeAgreeCheckBox>ul>li:nth-child(2){position: absolute;top: 58%;right: 5%;margin-top: -12px;}
+#writeAgreeForm #writeAgreeContent{background:#f7f7f7; box-sizing:border-box; color:#666 !important; width:95%; height:160px;}
+#writeAgreeForm #writeAgreeContent{border:1px solid #ddd; border-radius:3px;margin-bottom:20px;overflow:scroll;}
+#writeAgreeForm	#writeAgreeContent{padding:2%; margin:0 auto;}
+#writeAgreeForm>ul>li>div>#writeAgreeContent>p:first-child{font-size:17px; text-align:center; color:green; font-weight:900;}
+#writeAgreeForm>ul>li>div>#writeAgreeContent>p{font-size:15px;}
+#writeAgreeForm>ul>li>div>#writeAgreeContent>ul>li{font-size:15px;list-style:none;}
+#writeAgreeForm>ul>li>div>#writeAgreeContent>ul{padding:0;}
+#writeAgreeForm>ul>li>div>ul>div>#writeSubject{font-size:150%; font-weight:bold; color:skyblue; list-style:none; border-bottom:gray;}
+#writeAgreeForm #writeAgreeImg{width:35%; height:90%; margin:0 auto; padding:3%}
+#writeAgreeForm>.writeAgreeBox>.check01>div>.writeAgreeFix{margin:0; padding:0;}
+#writeAgreeForm>.writeAgreeBox>.check01>div>.writeAgreeFix>li{list-style:none; height:28%}
+#writeAgreeForm>ul>.check08>div>#writeAgreenotes>li{font-size:15px; list-style: disc; margin-right:10%;}
+#writeAgreeForm>.writeAgreeBox>.check08>div>div>ul>li>#writeAgreeBtn1{background-color:#003300;  cursor:pointer; width:30%; height:7%;border-radius:40px 40px 40px 40px; font-size:20pt; margin-bottom: 6%; background-color: white;  border-color: black; }
+#writeAgreeForm>.writeAgreeBox>.check08>div>div>ul>li{list-style:none;}
+#writeAgreeForm>.writeAgreeBox>.check08>div>div>ul{padding:0;}
+#writeAgreeForm #writeAllAgreecheck{margin-left:85%;}
+#writeAgreeForm input[type=checkbox] {display:none;}
+#writeAgreeForm input[type=checkbox] + label {cursor: pointer; padding-left: 20px; background-repeat: no-repeat;background-image: url('/milkyWayForest/image/check1.PNG'); background-size:20px;}
+#writeAgreeForm input[type=checkbox]:checked + label {background-image: url('/milkyWayForest/image/check2.PNG');background-size:20px;}
+#writeAgreeForm input[type=checkbox]:disabled + label {background-image: url('/milkyWayForest/image/check1.PNG');background-size:20px;}
+
+
+/* 회원가입폼 */
+#memberWriteForm{width: 600px;  margin: 0 auto; margin-top:20px;}
+#memberWriteForm>#memberWriteBox{background-color: #fff; margin:0; padding:0;border: 1px solid #ddd; width:600px;}
+#memberWriteForm>#memberWriteBox>#memberWriteLi{list-style:none; height:80px;}
+#memberWriteForm>#memberWriteBox>#memberWriteLi>#memberWriteTitle{text-align:center; padding-top:4%; font-size:200%;}
+#memberWriteForm>#memberWriteBox>#memberWriteLi>#memberWriteTitleContent{text-align:center;font-size:160%;}
+#memberWriteForm>#memberWriteBox>#memberWriteLi>div>#image1{text-align:center;}
+#memberWriteForm>#memberWriteBox>#memberWriteLi>ul{padding:0;}
+#memberWriteForm>#memberWriteBox>#memberWriteContent>ul>li:nth-child(1){text-align:center;font-size:160%; list-style:none;}
+#memberWriteForm>#memberWriteBox>#memberWriteContent>ul{padding:0;}
+#memberWriteForm>#memberWriteBox>#memberWriteContent>ul>li:nth-child(2){text-align:center; list-style:none; font-size:100%;}
+#memberWriteForm>#memberWriteBox>#memberWriteContent>ul>li:nth-child(3){text-align:center; list-style:none; font-size:80%;}
+#memberWriteForm>#memberWriteBox>#blankSpace{list-style:none; height:100px;}
+#memberWriteForm>#memberWriteBox>li{list-style:none; height:35px; }
+#memberWriteForm>#memberWriteBox>li>div>#memberWriteId{margin-top:2px;height:20px;width:250px; border-left:0; border-right:0; border-top:0; border-bottom-color:darkslategrey; outline:none; padding:0;font-size:12pt; padding-left:10px;}
+#memberWriteForm>#memberWriteBox>li>div>#memberWritePwd{margin-top:2px;height:20px;width:250px; border-left:0; border-right:0; border-top:0; border-bottom-color:darkslategrey; outline:none; padding:0;font-size:12pt; padding-left:10px;}
+#memberWriteForm>#memberWriteBox>li>div>#memberWriteRePwd{margin-top:2px;height:20px;width:250px; border-left:0; border-right:0; border-top:0; border-bottom-color:darkslategrey; outline:none; padding:0;font-size:12pt; padding-left:10px;}
+#memberWriteForm>#memberWriteBox>li>div>#memberWriteName{margin-top:2px;height:20px; width:250px; border-left:0; border-right:0; border-top:0; border-bottom-color:darkslategrey; outline:none; padding:0;font-size:12pt; padding-left:10px;}
+#memberWriteForm>#memberWriteBox>li>div>#memberWriteNick{margin-top:2px;height:20px; width:250px; border-left:0; border-right:0; border-top:0; border-bottom-color:darkslategrey; outline:none; padding:0;font-size:12pt; padding-left:10px;}
+#memberWriteForm>#memberWriteBox>li>div>#writeQuestion{margin-top:2px;height:20px; width:65%; border-left:0; border-right:0; border-top:0; border-bottom-color:darkslategrey; outline:none;font-size:12pt; padding-left:10px;}
+#memberWriteForm>#memberWriteBox>li>div>#writeAnwer{margin-top:2px;width:20%; height:20px; margin-left:4%; border-left:0; border-right:0; border-top:0; border-bottom-color:darkslategrey; outline:none;font-size:12pt; padding-left:10px;}
+#memberWriteForm>#memberWriteBox>li>div>.gender{margin-top:2px; margin-left:5%;}
+#memberWriteForm>#memberWriteBox>li>div>#writeTel1{margin-top:2px; width:17%; height:20px; border-left:0; border-right:0; border-top:0; border-bottom-color:darkslategrey; outline:none;font-size:12pt; padding-left:5px;}
+#memberWriteForm>#memberWriteBox>li>div>#writeTel2{width:25%;height:20px;margin-top:2px; border-left:0; border-right:0; border-top:0; border-bottom-color:darkslategrey; outline:none;font-size:12pt; padding-left:5px;}
+#memberWriteForm>#memberWriteBox>li>div>#writeTel3{width:25%;height:20px;margin-top:2px; border-left:0; border-right:0; border-top:0; border-bottom-color:darkslategrey; outline:none;font-size:12pt; padding-left:5px;}
+#memberWriteForm>#memberWriteBox>li>div>#memberWriteEmail{width:20%; height:20px; margin-top:2px; border-left:0; border-right:0; border-top:0; border-bottom-color:darkslategrey; outline:none;font-size:12pt; padding-left:5px; }
+#memberWriteForm>#memberWriteBox>li>div>#memberWriteEmail1{width:30%;height:20px; margin-top:2px; border-left:0; border-right:0; border-top:0; border-bottom-color:darkslategrey; outline:none;font-size:12pt; padding-left:5px;}
+#memberWriteForm>#memberWriteBox>li>div>#joinPath{margin-top:2px;height:40%; border-left:0; border-right:0; border-top:0; border-bottom-color:darkslategrey; outline:none;font-size:12pt; padding-left:10px;}
+#memberWriteForm>#memberWriteBox>.blankLi>.labelName{ float:left; width:35%;height:100%;border-right:1px solid gray; text-align:left;}
+#memberWriteForm>#memberWriteBox>.blankLi>.labelName>p{ margin-top:2px; height:80%;padding-left:50px;}
+#memberWriteForm>#memberWriteBox>.blankLi>.writeInputText{width:63%;float:right;height:100%; }
+#memberWriteForm #yy{width:80px;height:20px;margin-top:2px; border-left:0; border-right:0; border-top:0; border-bottom-color:darkslategrey; outline:none;font-size:12pt; padding-left:5px;}
+#memberWriteForm #mm{width:80px;height:20px;margin-top:2px; border-left:0; border-right:0; border-top:0; border-bottom-color:darkslategrey; outline:none;font-size:12pt; padding-left:5px;}
+#memberWriteForm #dd{width:80px;;height:20px;margin-top:2px;; border-left:0; border-right:0; border-top:0; border-bottom-color:darkslategrey; outline:none;font-size:12pt; padding-left:5px;}
+#memberWriteForm>#memberWriteBox>li>div>#memberWriteBtn{margin-top:60px;cursor:pointer; width:140px; height:50px;border-radius:40px 40px 40px 40px; font-size:20pt; margin-bottom: 6%; background-color: white; border:1; border-color: black;}
+#memberWriteForm>#memberWriteBox>li>div>#memberWriteReset{cursor:pointer; width:140px; height:50px;border-radius:40px 40px 40px 40px; font-size:20pt; margin-bottom: 6%; background-color: white; border:1; border-color: black;}
+#memberWriteForm #athnt{display:none;}
+#memberWriteForm #athntNmbr{width:60px;}
+#memberWriteForm #athBtn{width:40px;}
+#memberWriteForm #idDiv{color:red; font-size: 8px;}
+#memberWriteForm #pwdDiv{color:red; font-size: 8px;}
+#memberWriteForm #pwdReDiv{color:red; font-size: 8px;}
+#memberWriteForm #nameDiv{color:red; font-size: 8px;}
+#memberWriteForm #nickNameDiv{color:red; font-size: 8px;}
+#memberWriteForm #emailDiv{margin-left:80px;margin-top:10px;color:red; font-size: 8px;}
+#memberWriteForm #athDiv{color:red; font-size: 8px;}
+
+
+/* 회원가입 완료 */
+#writeOkForm{width: 600px;  margin: 0 auto; margin-top:20px;}
+#writeOkForm #writeOkBox{background-color: #fff; margin:0; padding:0 auto;border: 1px solid #ddd; width:600px; height:500px; padding-top:100px;}
+#writeOkForm #writeOkSubject{margin:0 auto;border-bottom: 1px solid #ddd; width:400px; text-align: center;font-size:40px;height:80px;}
+#writeOkForm #writeOkContent{border-bottom:1px solid #ddd; width:400px; margin:0 auto; height:150px; margin-top:30px; text-align:center;}
+#writeOkForm #writeOkBtn{ width:400px; margin:0 auto; margin-top:30px; text-align:center;}
+#writeOkForm #writeOkHomeBtn{width:150px; height:50px; background-color: white;margin-right:10px;}
+#writeOkForm #writeOkLoginBtn{width:150px; height:50px; background-color: black; color:white;margin-left:10px;}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function open1(){
+		//새로운 창이 열린다.
+		window.open("open.html");
+	}
+	
+	function open2(){
+		window.open("open.html",
+					"",
+					"width=300, height=500, scrollbars=no. toolbar, menubar=no, status=no, location=no");
+	}
+	
+	function open3(url){
+		window.open(url,
+				"myWindow",
+				"width=300, height=500, scrollbars=no. toolbar, menubar=no, status=no, location=no");
+	}
+</script>"
+</head>
+<body>
+   <h1>window 객체</h1>
+   <h3>open 메소드 확인</h3>
+   <div>
+      <a href="#" onclick="open1(); return false;">새 창 열기</a>
+      <br>
+      <a href="#" onclick="open2(); return false;">팝업 창 열기(1)</a>
+      <br>
+      <a href="#" onclick="open3('https://www.naver.com'); return false;">팝업 창 열기(2-1)</a>
+      <br>
+      <a href="#" onclick="open3('https://www.daum.net'); return false;">팝업 창 열기(2-2)</a>
+      <br>
+	</div>
+</body>
+</html>
+
+<!-- 
+a태그에서 onclick이 있을 경우에는 onclick을 먼저 수행하고 href 로 이동한다
+<a href="http://www.naver.com" onclick="alert('hi');">TEST1</a>
+
+ onclick에서 return false;가 있을 경우 href로 이동하지 않는다.
+<a href="http://www.naver.com" onclick="alert('hi'); return false;">TEST2</a>
+
+<a href="#" onclick="alert('hi');">TEST1</a>
+-->

@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="/milkyWayForest/css/mypage.css">
+
+<style type="text/css">
+#mypageMyinfo #contents{
+	margin-bottom: 10px;
+}
+
+</style>
+<form id="mypageShpMngListForm" name="mypageMyInfo">
+<div id="main-wrapper">
+	<div id="main-sideNav" class="item">
+		<jsp:include page="mypageSideNav.jsp"/>
+	</div>
+
+	<div id="main-topNav" class="item">
+		<jsp:include page="mypageTopNav.jsp"/>	
+	</div>
+	<%----------------- 디폴트 설정 -----------------%>
+	<div>
+		<div style="border:3 solid black; width:820px; height:1000px;"></div>
+	</div>
+</div>
+</form>

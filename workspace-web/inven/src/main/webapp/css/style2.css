@@ -1,0 +1,33 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+#container {
+    margin:0 auto;  
+    width:1200px;    
+}
+header{ 
+    padding-left:520px;
+    padding-top:100px;
+    width:100%;    
+    height:100px; 
+}
+#contents{
+    padding-left:450px;
+    padding-top:80px;
+    width:100%;
+    height:500px;
+}
+footer {
+    width:100%;
+    height:100px;
+}
+#writeBtn {
+    width:130px;
+    height:40px;
+}
+#canBtn {
+    width:130px;
+    height:40px;
+}

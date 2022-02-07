@@ -1,0 +1,42 @@
+package io;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Vector;
+
+import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
+
+public class ScoreImpl implements Score {
+	private List<ScoreDTO> list;
+	
+	public ScoreImpl() {
+		list = new ArrayList<ScoreDTO>();
+	}
+	
+	@Override
+	public void input(ScoreDTO dto) {
+		list.add(dto);
+		System.out.println(list);
+		JOptionPane.showMessageDialog(null, "등록 완료");
+		
+	}
+	
+	
+	@Override
+	public void print(DefaultTableModel model) {
+		for(ScoreDTO dto : list) {
+			Vector<String> v = new Vector<String>();
+			v.add(dto.getHak());
+			v.add(dto.getName());
+			v.add(dto.getKor()+"");
+			v.add(dto.getEng()+"");
+			v.add(dto.getMath()+"");
+			v.add(dto.getTot()+"");
+			v.add(String.format("%.2f", dto.getAvg()));
+			
+			model.addRow(v);
+			
+		}//for
+	}
+}

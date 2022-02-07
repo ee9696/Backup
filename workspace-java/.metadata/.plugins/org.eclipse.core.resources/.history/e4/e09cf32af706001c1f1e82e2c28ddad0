@@ -1,0 +1,11 @@
+package io;
+
+import javax.swing.table.DefaultTableModel;
+
+public class ScoreImpl implements Score {
+	
+	@Override
+	public void print(DefaultTableModel model) {
+		
+	}
+}

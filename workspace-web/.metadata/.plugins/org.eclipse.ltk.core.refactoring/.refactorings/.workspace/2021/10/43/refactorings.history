@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;MQ8Project&apos; to &apos;MQBProject&apos;" description="Rename resource &apos;MQ8Project&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/MQ8Project" name="MQBProject" stamp="1634628459020" updateReferences="true"/>
+</session>
