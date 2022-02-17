@@ -7,8 +7,8 @@ class Operator2 {
 
       String b = "apple";
       String c = new String("apple");
-      System.out.println("b == c : " + (b==c)); //false, ÁÖ¼Ò°ª ºñ±³
-      System.out.println("b.equals(c) : " + (b.equals(c))); //true, ¹®ÀÚ¿­ ºñ±³
+      System.out.println("b == c : " + (b==c)); //false, ì£¼ì†Œê°’ ë¹„êµ
+      System.out.println("b.equals(c) : " + (b.equals(c))); //true, ë¬¸ìì—´ ë¹„êµ
       System.out.println("!b.equals(c) : " + (!b.equals(c)));
 
    }
