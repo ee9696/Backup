@@ -1,5 +1,5 @@
 class Test{
-	int a, b; //ÇÊµå, ÃÊ±âÈ­
+	int a, b; //í•„ë“œ, ì´ˆê¸°í™”
 
 	public void sum(){
 		//int a=100;
@@ -19,7 +19,7 @@ class MethodTest4 {
 
 		t.a = 50;
 		t.b = 60;
-		t.sum(); //È£Ãâ
+		t.sum(); //í˜¸ì¶œ
 		t.mul();
 		System.out.println();
 
