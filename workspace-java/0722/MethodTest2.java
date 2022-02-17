@@ -2,7 +2,7 @@ class MethodTest2 {
    
    public static void main(String[] args) {
       
-      MethodTest2 mt = new MethodTest2();//»ý¼º
+      MethodTest2 mt = new MethodTest2();//
 
       System.out.println("ÇÕ = " + mt.sum(320, 258)); //호출
       System.out.println("Â÷ = " + mt.sub(320, 258)); //62
