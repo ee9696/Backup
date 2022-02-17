@@ -2,12 +2,12 @@ class MethodTest2 {
    
    public static void main(String[] args) {
       
-      MethodTest2 mt = new MethodTest2();//»ý¼º
+      MethodTest2 mt = new MethodTest2();//Â»Ã½Â¼Âº
 
-      System.out.println("ÇÕ = " + mt.sum(320, 258)); //È£Ãâ
-      System.out.println("Â÷ = " + mt.sub(320, 258)); //62
-	  System.out.println("°ö = " + mt.mul(320, 258)); //
-	  System.out.println("¸ò = " + String.format("%.2f",mt.div(320, 258))); //1.24
+      System.out.println("Ã‡Ã• = " + mt.sum(320, 258)); //í˜¸ì¶œ
+      System.out.println("Ã‚Ã· = " + mt.sub(320, 258)); //62
+	  System.out.println("Â°Ã¶ = " + mt.mul(320, 258)); //
+	  System.out.println("Â¸Ã² = " + String.format("%.2f",mt.div(320, 258))); //1.24
    }
 
    public double div(int a, int b){
@@ -22,7 +22,7 @@ class MethodTest2 {
 	   return a-b;
    }
 
-   public int sum(int a, int b) { //±¸Çö
+   public int sum(int a, int b) { //Â±Â¸Ã‡Ã¶
       return a+b;
    }
 }
