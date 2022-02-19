@@ -10,7 +10,7 @@ public class ForTest9 {
 		int mul=1;
 		int i;
 		
-		System.out.print("x°ª ÀÔ·Â : ");
+		System.out.print("xê°’ ìž…ë ¥ : ");
 		x = System.in.read()-'0';
 		System.out.print(x + "! = ");
 		for( i=1; i<=x; i++) {
@@ -28,7 +28,7 @@ public class ForTest9 {
 public class ForTest9 {
 
 public static void main(String[] args) throws IOException {
-   System.out.print("x°ª ÀÔ·Â : ");
+   System.out.print("xê°’ ìž…ë ¥ : ");
    int x = System.in.read()-'0';
    
    //7! = 1*2*3*4*5*6*7 = 5040
