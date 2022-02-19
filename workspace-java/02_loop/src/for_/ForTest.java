@@ -6,9 +6,9 @@ public class ForTest {
 		int i;
 		for( i=1; i<=10; i++) {
 		
-		System.out.println("¾È³çÇÏ¼¼¿ä" + i);
+		System.out.println("ì•ˆë…•í•˜ì„¸ìš”" + i);
 		}// for
-		System.out.println("Å»Ãâ i = " + i);
+		System.out.println("íƒˆì¶œ i = " + i);
 		System.out.println();
 		
 		//10 9 8 7 6 5 4 3 2 1
