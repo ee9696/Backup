@@ -16,7 +16,7 @@ public class FOrTest3 {
 		if (rand=='A') count++; // 1, 2, 3 ,4 ,5
 		}
 		System.out.println();
-		System.out.println("ÃÑ AÀÇ °³¼ö = " + count);
+		System.out.println("ì´ Aì˜ ê°œìˆ˜ = " + count);
 			
 		}
 	}
