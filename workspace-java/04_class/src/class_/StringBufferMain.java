@@ -7,7 +7,7 @@ public class StringBufferMain {
 	
 	public StringBufferMain() {
 		Scanner scan = new Scanner(System.in);
-		System.out.print("¿øÇÏ´Â ´ÜÀ» ÀÔ·Â : ");
+		System.out.print("ì›í•˜ëŠ” ë‹¨ì„ ìž…ë ¥ : ");
 		dan = scan.nextInt();
 	}
 	
@@ -22,7 +22,7 @@ public class StringBufferMain {
 			buffer.append("=");
 			buffer.append(dan*i);
 			
-			System.out.println(buffer.toString()); //StringBuffer -> String º¯È¯
+			System.out.println(buffer.toString()); //StringBuffer -> String ë³€í™˜
 			buffer.delete(0, buffer.length());
 		} //for
 	}
