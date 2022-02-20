@@ -15,7 +15,7 @@ public class FruitTest {
 	public void calcTot() {
 		tot = jan + feb + mar;
 		
-		sumJan += jan;	//1¿ù ÇÕ°è
+		sumJan += jan;	//1ì›” í•©ê³„
 		sumFeb += feb;
 		sumMar += mar;
 	}
