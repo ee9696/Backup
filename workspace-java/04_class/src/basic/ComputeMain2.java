@@ -3,11 +3,11 @@ package basic;
 public class ComputeMain2 {
 
 	public static void main(String[] args) {
-		Compute[] ar = new Compute[3]; //°´Ã¼ ¹è¿­
+		Compute[] ar = new Compute[3]; //ê°ì²´ ë°°ì—´
 		for(int i=0; i<ar.length; i++) {
 			ar[i] = new Compute();
 		}
-		ar[0] = new Compute();	//Å¬·¡½º »ı¼º
+		ar[0] = new Compute();	//í´ë˜ìŠ¤ ìƒì„±
 		ar[1] = new Compute();
 		ar[2] = new Compute();
 		
