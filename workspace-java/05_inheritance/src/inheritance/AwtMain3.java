@@ -4,11 +4,11 @@ import java.awt.Frame;
 import java.awt.Button;
 
 public class AwtMain3 extends Frame {
-	private Button newBtn, exitBtn; //ÇÊµå
+	private Button newBtn, exitBtn; //í•„ë“œ
 	
 	public void init() {
-		newBtn = new Button("»õ·Î¸¸µé±â");
-		exitBtn = new Button("Á¾·á");
+		newBtn = new Button("ìƒˆë¡œë§Œë“¤ê¸°");
+		exitBtn = new Button("ì¢…ë£Œ");
 		
 		setLayout(null);
 		newBtn.setBounds(100, 100, 120, 50);
@@ -17,7 +17,7 @@ public class AwtMain3 extends Frame {
 		add(newBtn);
 		add(exitBtn);
 		
-		setTitle("Ã¢");
+		setTitle("ì°½");
 		setBounds(900, 200, 300, 400);
 		setVisible(true);
 		
