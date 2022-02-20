@@ -10,9 +10,9 @@ public class InputMain {
    
    public InputMain() throws FileNotFoundException {
       Scanner scan = new Scanner(System.in);
-      System.out.print("Á¤¼ö ÀÔ·Â : ");
+      System.out.print("ì •ìˆ˜ ìž…ë ¥ : ");
       x = scan.nextInt();
-      System.out.print("½Ç¼ö ÀÔ·Â : ");
+      System.out.print("ì‹¤ìˆ˜ ìž…ë ¥ : ");
       y = scan.nextDouble();
       
       //Scanner scan = new Scanner(new File("data.txt"));
