@@ -14,11 +14,11 @@ public class InstanceOf {
 		if(aa instanceof AAA)	System.out.println("1. TRUE");
 		else System.out.println("1. FALSE");
 		
-		AAA aa4 = bb; //ºÎ¸ğ = ÀÚ½Ä
+		AAA aa4 = bb; //ë¶€ëª¨ = ìì‹
 		if(bb instanceof AAA) System.out.println("2. TRUE");
 		else System.out.println("2. FALSE");
 		
-		BBB bb2 = (BBB)aa2;	//ÀÚ½Ä = (ÀÚ½Ä)ºÎ¸ğ
+		BBB bb2 = (BBB)aa2;	//ìì‹ = (ìì‹)ë¶€ëª¨
 		if(aa2 instanceof BBB) System.out.println("3. TRUE");
 		else System.out.println("3. FALSE");
 		
